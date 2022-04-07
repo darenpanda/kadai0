@@ -1,0 +1,28 @@
+body{
+    background: rgb(192, 255, 192);
+  }
+
+  h1 {color: rgb(0, 4, 255);
+font-size: 20px;
+
+}
+
+  P {color: rgb(255, 153, 0);
+font-size: 10px;
+
+  }
+.a {color: red;
+    font-size: 30px
+    
+    ;}
+
+.b {color: rgb(113, 43, 226);
+font-size: 50px;
+}
+
+
+img{
+	max-width: 100%;
+	height: auto; 
+
+

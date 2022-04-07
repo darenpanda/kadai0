@@ -1,0 +1,491 @@
+/* ここから下に記載していく */
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navigation ul {
+    display: flex;
+  }
+  
+  .navigation li {
+    margin: 50px 25px ;
+    font-size: 21px;
+  }
+  
+/* メニュー */
+nav ul{
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    }
+    nav ul li{
+    display: table-cell;
+    position: relative;
+    }
+    nav ul li a{
+    display: block;
+    width: 100%;
+    }
+    nav ul li a::after,
+    nav ul li a::before {
+    display: block;
+    content: ”;
+    position: absolute;
+    }
+    nav ul li a::after {
+    bottom: -50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 100%;
+    }
+    nav ul li a.current::after {
+    background-color: #3498db;
+    }
+    nav ul li a:hover{
+    color: #3498db;
+    }
+    nav ul li a:hover:after {
+    background-color: yellow;
+    width: 100%;
+    left: 0;
+    border-radius: 5px;
+    }
+    nav ul li a{
+    text-decoration: none;
+    color:#aaa;
+    }
+    nav ul li a.current{
+    color:#555;
+    }
+/* メニューおしまい */
+
+/* OL メニュー */
+ol.sample1{
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding:0;
+  }
+  ol.sample1 li{
+    position:relative;
+    margin: auto;
+    padding-left:40px;
+    font-weight: bold;
+    font-size:14px;
+    line-height: 30px;
+    border: solid 1px #F6A38B;
+    border-radius:20px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+
+ol.sample1 li:before{
+  counter-increment: list;
+  content: counter(list);
+  position: absolute;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  line-height:30px;
+  background: #F6A38B;
+  border-radius: 50%;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ol.sample1 li:hover{
+  background: #F6A38B;
+  color: #fff;
+}
+ol.sample1 li:hover:before{
+  background: #fff;
+  color: #F6A38B;
+}
+/* おしまい */
+
+  
+
+  /* メインビジュアル */
+  .mainvisual {
+    background: url(../img/sakura2.jpg);
+    background-position: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    margin-bottom: 60px;
+  }
+  
+  .mainvisual .title {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .mainvisual .text {
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  /* アバウト */
+  .about {
+    text-align: center;
+    margin-bottom:80px;
+  }
+  
+  .about .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd61a;
+    margin-bottom: 30px;
+  }
+  
+  .about .subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  .about .text {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  
+  /* イメージボックス */
+  .imgboxes {
+    display: flex;
+    margin-bottom: 60px;
+    width: auto;
+    /* position: relative; */
+  }
+  
+  .imgboxes .img {
+    width: 25%;
+    /* position: absolute; */
+  }
+  
+  .imgboxes .img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* 動きのあるJQ */
+  .img-wrap {
+    width: 800px;
+    position: relative;
+}
+
+.img-wrap img {
+    width:100%;
+    position: absolute;    
+}
+/* おしまい */
+
+
+  /* コース */
+  .course {
+    margin-bottom: 60px;
+  }
+  
+  .course .titlebox {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .course .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .course .text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* イントロ */
+  .introbox {
+    display: flex;
+  }
+  
+  .introbox .img {
+    width: 50%;
+  }
+  
+  .introbox .img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .introbox .textbox {
+    padding: 120px 0;
+    width: 50%;
+    background-color: #fafafa;
+  }
+  
+  .introbox .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    width: 480px;
+  }
+  
+  .introbox .text {
+    font-size: 16px;
+    width: 480px;
+    margin-left: 50px;
+  }
+  
+  .intro2 .introbox {
+    flex-direction: row-reverse;
+  }
+  
+  .intro2 .textbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .intro2 .title {
+    margin: 0 50px 40px 0;
+  }
+  
+  .intro2 .text {
+    margin: 0 50px 0 0;
+  }
+  
+  /* ニュース */
+  .news .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd61a;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .news .subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .newslist {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto 60px;
+  }
+  
+  .newsbox {
+    width: 300px;
+    cursor: pointer;
+  }
+  
+  .newsimg {
+    padding-bottom: 30px;
+  }
+  
+  .newsday {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  .newstext {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  .btn {
+    margin: 60px auto;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    background-color: #ffd61a;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* アクセス */
+  .access {
+    padding-top: 60px;
+    background: #fafafa;
+  }
+  
+  .access .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .access .subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  
+  .accessmap {
+    margin-bottom: 60px;
+  }
+  
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .infotitle {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+  
+  .infotext {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  
+  /* コンタクト */
+  .contact {
+    text-align: center;
+    margin-bottom: 140px;
+  }
+  
+  .contact .titlebox {
+    margin-bottom: 70px;
+  }
+  
+  .contact .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .contact .subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  
+  .titlebox .text {
+    font-style: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .contactform {
+    width: 640px;
+    margin: 0 auto;
+  }
+  
+  .form-inner {
+    border-bottom: 1px solid #bfbfbf;
+  }
+  
+  .form-inner dl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #bfbfbf;
+    text-align: left;
+  }
+  
+  .form-title {
+    box-sizing: border-box;
+    width: 37.5%;
+    text-align: left;
+    padding: 8px 64px 8px 16px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-item {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 62.5%;
+    height: 36px;
+    padding: 8px 0 8px 8px;
+    border-left: 1px solid #bfbfbf;
+  }
+  
+  .form-parts {
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 75%;
+  }
+  
+  .kikkake {
+    height: 50px;
+  }
+  
+  .kikkake .form-item {
+    height: 100%;
+  }
+  
+  .siboudouki {
+    height: 180px;
+  }
+  
+  .siboudouki .form-item {
+    height: 100%;
+  }
+  
+  .siboudouki li {
+    font-size: 14px ;
+    margin: 24px 0;
+  }
+  
+  .detail {
+    height: 150px;
+  }
+  
+  .detail .form-item {
+    height: 100%;
+  }
+  
+  input[type*="radio"]  {
+    padding: 0 20px 0 0;
+  }
+  
+  .btn-submit {
+    -webkit-appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    border: none;
+  }
+  
+  .footer {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #707070;
+    color: white;
+    text-align: center;
+  }
+  

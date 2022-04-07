@@ -1,0 +1,1 @@
+.instagram-gallery {    max-width: 640px;    margin: auto;  }  .instagram-gallery__list {    display: flex;    flex-wrap: wrap;    -ms-flex-wrap: wrap;  }  .instagram-gallery__item {    min-width: 33.333%;    width: 33.333%;    padding: 0px;  }

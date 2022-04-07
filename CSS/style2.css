@@ -1,0 +1,404 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+line-height: 1.7;
+color: #000 #432;
+
+}
+
+a {
+text-decoration: none;
+}
+
+img {
+max-width: 100%;
+}
+
+    
+
+
+/* ////////////////////////////////////// */
+
+
+.nav-list {display: flex;
+    font-size: 20px;
+text-transform: uppercase;
+margin-top:34px;
+list-style: none;
+  }
+
+.main-nav li {
+margin-left: 36px;
+}
+
+.main-nav a {
+color:#432 ;
+}
+
+.main-nav a:hover {
+color: #0BD;
+}
+
+.page-header {
+display: flex;
+justify-content:space-between
+
+}
+  .nav-item{
+margin-right: 100px;
+align-content: unset;
+}
+
+/* 写真の上に文字 */
+
+.mainbg {
+    position: relative;
+    }
+  
+  .mainbg p {
+    position: absolute;
+    top: 33.333%;/*画像の左上に配置*/
+    left: 33.333%;
+    margin: 0; /*余計な隙間を除く*/
+    color: rgb(255, 255, 255);/*文字を白に*/
+
+    font-size: 50px;
+    line-height: 1;/*行高は1に*/
+    padding: 5px 10px;/*文字周りの余白*/
+    }
+  
+  .mainbg img {
+    width: 100%;
+    }
+
+
+/* /////////// */
+
+/* aboutから */
+
+.about {display: flex;
+    font-size: 100px;
+text-transform: uppercase;
+margin-top:34px;
+list-style: none;
+  }
+
+
+
+
+/* まえたつさん///////////////////////// */
+
+.bgi .main-title{
+    margin-top: 40px;
+    padding: 141px 10% 0 0;
+    /* margin-right: 10px; */
+}
+.bgi .sub-title{
+    padding: 20px 8% 0 0;
+    vertical-align: bottom;
+}
+
+
+/* /////////// */
+
+
+
+
+#wrap{
+    width:800px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+
+  h2 {
+    padding: 1.65rem 2rem;
+    background-color: rgba(165, 210, 255, .4);
+    background-image:
+      linear-gradient(90deg, rgba(165, 210, 255, .3) 50%, transparent 50%),
+      linear-gradient(rgba(165, 210, 255, .3) 50%, transparent 50%);
+    background-size: 40px 40px;
+  }
+
+
+
+  h1 {
+    font-size: 50px
+    font-color rgb(255, 115, 0);
+}
+
+ol.sample1{
+    counter-reset:list;
+    list-style-type:none;
+    font: 14px/1.6 'arial narrow', sans-serif;
+    padding:0;
+  }
+  ol.sample1 li{
+    position:relative;
+    margin: auto;
+    padding-left:40px;
+    font-weight: bold;
+    font-size:14px;
+    line-height: 30px;
+    border: solid 1px #F6A38B;
+    border-radius:20px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  ol.sample1 li:before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    line-height:30px;
+    background: #F6A38B;
+    border-radius: 50%;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  ol.sample1 li:hover{
+    background: #F6A38B;
+    color: #fff;
+  }
+  ol.sample1 li:hover:before{
+    background: #fff;
+    color: #F6A38B;
+  }
+
+  oluteは、親要素を基準に、絶対的な位置を決めます。
+
+.mainbg p {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.center {
+    text-align: center;
+  }
+
+/*------------------ 竊�#main-fifth縺ｮ險倩ｿｰ ------------------*/
+#main-fifth{
+    /* background-color: steelblue; */
+
+    /* 繝壹�繧ｸ蜀�Μ繝ｳ繧ｯ縺後�繝�ム蝗ｺ螳壹↓繧医ｊ縺｡繧�ｓ縺ｨ蜃ｺ縺ｪ縺�凾縺ｮ隱ｿ謨ｴ繧ｳ繝ｼ繝� */
+    margin-top:-60px;
+    padding-top:60px;
+    /* 繝壹�繧ｸ蜀�Μ繝ｳ繧ｯ縺後�繝�ム蝗ｺ螳壹↓繧医ｊ縺｡繧�ｓ縺ｨ蜃ｺ縺ｪ縺�凾縺ｮ隱ｿ謨ｴ繧ｳ繝ｼ繝� */
+}
+.recommend-title{
+    text-align: center;
+    margin: var(--content-head-title-margin);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+#main-fifth form{
+    margin: 30px auto;
+    padding: 30px 0;
+}
+
+#main-fifth form table {
+    margin: 0 auto;
+    width: 75%;
+}
+
+#main-fifth form table tr th{
+    padding: 20px 15px 20px 0;
+    width: 50%;
+}
+
+#main-fifth form table tr td{
+    padding: 20px 0 20px 15px;
+    /* text-align: center; */
+    width: 50%;
+}
+
+#id, #old, #mail, #name ,#kana-name{
+    width: 150px;
+}
+/* 蟷ｴ莉｣ */
+#old option div{
+    margin: 0 auto;
+}
+textarea {
+    resize: vertical;
+    width: 149px;
+}
+
+table tr th .submit{
+    padding: 5px 60px;
+}
+
+#table-title{
+    font-size: 24px;
+}
+
+#inquiry-cell7_1{
+    padding-bottom: 50px;
+}
+
+
+/* タイル型メニュー */
+
+.container {
+display: flex;
+justify-content: flex-end;
+}
+.item {
+background: #fff
+;
+color: #fff;
+margin: 30px;
+padding: 10px;
+
+}
+
+
+
+/* ここからグーグルマップ */
+.gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    }
+    .gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    }
+
+/* ここまでグーグルマップ */
+
+/* ↓まえたつさん */
+    /* 繧｢繧ｳ繝ｼ繝�ぅ繧ｪ繝ｳ繝√ぉ繝�け繝懊ャ繧ｯ繧ｹ */
+    /* https://codepen.io/takanorip/pen/grZpOp */
+    .inquiry-favorite {
+        max-width: 140px;
+        margin: 0 auto;
+        padding: 0;
+        vertical-align: baseline;
+        font-size: 0.5rem;
+    }
+    
+    .inquiry-favorite a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        line-height: 1;
+    }
+    
+    .inquiry-favorite  .each-channel {
+        display: block;
+        margin: 0 0 1px 0;
+        padding :4px;
+        line-height: 0.8;
+        color :#fff;
+        background :#007bbb;
+        cursor :pointer;
+        /* margin: 10px 0 0 0; */
+    }
+    
+    .inquiry-favorite #inquiry-menu_bar01,
+    .inquiry-favorite #inquiry-menu_bar02,
+    .inquiry-favorite #inquiry-menu_bar03,
+    .inquiry-favorite #inquiry-menu_bar04,
+    .inquiry-favorite #inquiry-menu_bar05 {
+        display: none;
+    }
+    
+    .inquiry-favorite ul {
+        margin: 0;
+        padding: 0;
+        background :#f4f4f4;
+        list-style: none;
+        text-align: center;
+        width: 155px;
+    }
+    
+    .inquiry-favorite li {
+        max-height: 0;
+        overflow-y: hidden;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+
+        width: 100%;
+        text-align: left;
+    }
+
+    .inquiry-favorite-details,
+    .inquiry-favorite ul li label {
+        cursor: pointer;
+    }
+    
+    #inquiry-menu_bar01:checked ~ #inquiry-links01 li,
+    #inquiry-menu_bar02:checked ~ #inquiry-links02 li,
+    #inquiry-menu_bar03:checked ~ #inquiry-links03 li,
+    #inquiry-menu_bar04:checked ~ #inquiry-links04 li,
+    #inquiry-menu_bar05:checked ~ #inquiry-links05 li {
+        max-height: 36px;
+        opacity: .6;
+    }
+    /* 繝懊ち繝ｳ荳縺､縺ｧ繧ｪ繝ｼ繝ｫ繝√ぉ繝�け縺ｧ縺阪ｋ莉慕ｵ�∩繧貞�繧後◆縺� */
+    /* 竊代い繧ｳ繝ｼ繝�ぅ繧ｪ繝ｳ繝√ぉ繝�け繝懊ャ繧ｯ繧ｹ */
+
+    table .submit{
+        width: 30vw;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    #main-fifth form table tr .form-cell-left{
+        border-top: solid 1px #bfbfbf;
+        border-right: solid 1px #bfbfbf;;
+    }
+    #main-fifth form table tr .form-cell-right{
+        border-top: solid 1px #bfbfbf;
+        border-left: solid 1px #bfbfbf;;
+    }
+
+    @media screen and (max-width: 500px) {
+        table tr th .submit{
+            padding: 0 10px 0;
+            font-size: 1rem;
+        }
+        #id, #old, #mail, #name ,#kana-name{
+            width: 98%;
+        }
+
+        textarea {
+            resize: vertical;
+            width: 97%;
+        }
+        .inquiry-favorite ul {
+            width: 100%;
+        }
+        /* .form-cell-right label{
+
+        } */
+    }
+
+/*------------------ 竊�#main-fifth縺ｮ險倩ｿｰ ------------------*/
